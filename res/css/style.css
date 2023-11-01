@@ -1,0 +1,71 @@
+* {
+  user-select: none;
+  font-family: "Orbitron", sans-serif;
+}
+
+html,
+body {
+  background: rgb(3, 17, 87);
+  background: radial-gradient(
+    circle,
+    rgba(3, 17, 87, 1) 0%,
+    rgba(25, 19, 20, 1) 100%
+  );
+  overflow: hidden;
+}
+
+#menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+#startButton {
+  border: none;
+  background-color: red;
+  font-size: 46px;
+  color: white;
+  padding: 0.4em;
+  padding-left: 0.8em;
+  padding-right: 0.8em;
+  border-radius: 50px;
+  box-shadow: 0 0 50px red;
+  filter: blur(0.5px);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#point {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 27, 27, 0.708);
+  border-radius: 100%;
+  border: 5px solid rgb(255, 0, 0);
+  filter: blur(1px);
+  position: absolute;
+  top: 300px;
+  left: 250px;
+  cursor: pointer;
+  box-shadow: 0 0 50px red;
+  transition: .2s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+#startButton:hover {
+  box-shadow: 0 0 50px rgb(255, 130, 130);
+}
+
+#point:hover {
+  filter: blur(1px);
+  box-shadow: 0 0 50px rgb(255, 99, 99);
+}
+
+#timeInfo {
+  text-align: center;
+  font-size: 24px;
+  color: white;
+}
